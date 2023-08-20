@@ -5,6 +5,7 @@ NUMBER=$1
 echo "Please enter your number: "
 
 if [ $NUMBER -gt 10 ]
+then
     echo " Your number is greater than 10."
 else
    ## if [ $NUMBER -lt 10 ]
