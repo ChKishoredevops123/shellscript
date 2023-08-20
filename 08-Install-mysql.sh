@@ -13,6 +13,6 @@ then
         echo "ERROR: Installation not successful"
         exit 1
     else
-        echo "ERROR: Installation successful"
+        echo "INFO: Installation successful"
     fi
 fi
