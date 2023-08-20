@@ -12,3 +12,4 @@ else
     else
         echo "Your number is equal to 10."
 fi
+fi
