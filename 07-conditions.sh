@@ -11,3 +11,4 @@ else
         echo "Your number is less than 10."
     else
         echo "Your number is equal to 10."
+fi
