@@ -18,4 +18,7 @@ then
 fi
         yum install mysql -y
         VALIDATE $? "Install MYSQL success"
+
+        yum install postfix -y
+        VALIDATE $? "Install PostFix success"
     
