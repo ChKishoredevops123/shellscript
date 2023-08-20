@@ -16,4 +16,4 @@ echo "$PERSON1: What is date and time ??"
 
 DATE=$(date)
 
-echo "$PERSON: today date is : $DATE"
+echo "$PERSON2: today date is : $DATE"
