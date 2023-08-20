@@ -11,3 +11,9 @@ echo "Please enter your Password:"
 read -s PASSWORD
 
 echo "your Password is :$PASSWORD"
+
+echo "please enter your command:"
+
+read COMMAND
+
+echo "your command is :$COMMAND"
