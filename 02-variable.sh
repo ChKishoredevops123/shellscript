@@ -25,4 +25,6 @@ echo "=================================================================="
 NUMBER1=10
 NUMBER2=20
 
-echo "$NUMBER1 + $NUMBER2 "
+DATE=$(date)
+
+echo "Today's date and time is : $DATE"
