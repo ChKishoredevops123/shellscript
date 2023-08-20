@@ -15,7 +15,7 @@ then
     else
         echo "INFO: MySQL Installation successful"
     fi
-
+echo "==========================================================================="
          yum install nodejs -y
     if [ $? -ne 0 ]
     then
