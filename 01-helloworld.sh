@@ -1,5 +1,4 @@
 #!/bin/bash
 
 echo "  Hello world !!"
-
-i am doing changes again.
+echo " hello devops"
