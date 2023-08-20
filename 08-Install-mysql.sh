@@ -2,26 +2,20 @@
 
 USERID=$(id -u)
 
+VALIDATE(){
+    if [ $1 -ne 0 ]
+    then
+            echo "ERROR: MySQL Installation not successful"
+            exit 1
+        else
+            echo "INFO: MySQL Installation successful"
+    fi
+}
 if [ $USERID -ne 0 ]
 then
         echo " Please run with SUDO access:"
         exit 1
-    else 
-        yum install mysql -y
-    if [ $? -ne 0 ]
-    then
-        echo "ERROR: MySQL Installation not successful"
-        exit 1
-    else
-        echo "INFO: MySQL Installation successful"
-    fi
-echo "==========================================================================="
-         yum install nodejs -y
-    if [ $? -ne 0 ]
-    then
-        echo "ERROR: NODEJS Installation not successful"
-        exit 1
-    else
-        echo "INFO: NODEJS Installation successful"
-    fi
 fi
+        yum install mysql -y
+        VALIDATE $? "Install MYSQL success"
+    
