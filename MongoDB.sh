@@ -4,10 +4,10 @@ echo "hello mongoDB"
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-            echo -e "$1 Install Failure $N"
+            echo -e "Install Failure $N"
             exit 1
         else
-            echo -e "$1 Install Success $N"
+            echo -e "Install Success $N"
     fi
 }
 yum install nginxx -y
