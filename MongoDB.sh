@@ -12,7 +12,7 @@ VALIDATE(){
 }
 for i in {1..10}
 do
-echo $i
+echo "I am "$i
 done
 
 #yum install nginx -y
