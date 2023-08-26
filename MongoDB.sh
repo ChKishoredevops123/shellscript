@@ -1,18 +1,14 @@
 #!/bin/bash
-
-
 echo "hello mongoDB"
 
+VALIDATE(){
+    if [ $1 -ne 0 ]
+    then
+            echo -e "$1 Install Failure $N"
+        else
+            echo -e "$1 Install Success $N"
+    fi
+}
 yum install nginx -y
-RESULT=$(echo $?)
-
-If [ $RESULT -ne 0 ]
-then
-    echo "ERROR: Installation not successful "
-    exit 1
-else
-    echo "INFO: Installation successful "
-fi
-
-
+VALIDATE $? "Installing Nginx"
 
