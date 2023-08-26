@@ -10,11 +10,16 @@ VALIDATE(){
             echo -e "Install Success $N"
     fi
 }
-yum install nginx -y
-VALIDATE $? "Installing Nginx"
+for i in {1..10}
+do
+echo $i
+done
 
-yum install mysql -y
-VALIDATE $? "Installing MySql"
+#yum install nginx -y
+# VALIDATE $? "Installing Nginx"
 
-yum install postfix -y
-VALIDATE $?
+# yum install mysql -y
+# VALIDATE $? "Installing MySql"
+
+# yum install postfix -y
+# VALIDATE $?
