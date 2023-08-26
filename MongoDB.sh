@@ -15,3 +15,6 @@ VALIDATE $? "Installing Nginx"
 
 yum install mysql -y
 VALIDATE $? "Installing MySql"
+
+yum install postfix -y
+VALIDATE $?
