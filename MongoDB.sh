@@ -10,7 +10,8 @@ VALIDATE(){
             echo -e "Install Success $N"
     fi
 }
-yum install nginxx -y
+yum install nginx -y
 VALIDATE $? "Installing Nginx"
 
-
+yum install mysql -y
+VALIDATE $? "Installing MySql"
